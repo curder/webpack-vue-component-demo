@@ -16,7 +16,10 @@ module.exports = {
   mode: process.env.NODE_ENV,
 
   entry: {
-    index: ['./src/index.js', ]
+    index: [
+      './src/index.js',
+      './src/assets/sass/index.scss'
+    ]
   }, // 入口文件
 
   output: {
@@ -52,8 +55,9 @@ module.exports = {
     }),
 
     new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
+
   ],
 
   optimization: {

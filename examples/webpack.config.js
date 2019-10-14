@@ -26,7 +26,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist', 'examples'), // 目标文件路径
+    path: path.resolve(__dirname, '..', 'docs'), // 目标文件路径
     filename: '[name].js', // 目标文件名
   },
 

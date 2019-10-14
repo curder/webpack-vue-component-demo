@@ -13,13 +13,23 @@ module.exports = {
   mode: process.env.NODE_ENV,
 
   entry: {
-    index: ['./examples/index.js', ]
+    index: [
+      './examples/index.js',
+      './examples/assets/sass/index.scss',
+    ]
   }, // 入口文件
 
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname),
+    }
+  },
+
   output: {
-    path: path.resolve(__dirname, './dist/examples'), // 目标文件路径
+    path: path.resolve(__dirname, 'dist', 'examples'), // 目标文件路径
     filename: '[name].js', // 目标文件名
   },
+
   devServer: {
     clientLogLevel: 'error',
     compress: true,
@@ -54,6 +64,7 @@ module.exports = {
   },
 
   plugins: [
+
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.html'),
       inject: true

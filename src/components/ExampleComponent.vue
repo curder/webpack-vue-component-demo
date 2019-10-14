@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <h2 class="text-3xl bg-fixed">Example Component</h2>
+  <div class="flex justify-center items-center flex-1 text-center">
+    <h2 class="text-3xl">Example Component</h2>
   </div>
 </template>
 <script>
 export default {
   mounted() {
-    console.log('example component');
+    console.log('from plugin console export');
   }
 }
 

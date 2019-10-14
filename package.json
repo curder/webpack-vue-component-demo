@@ -1,10 +1,10 @@
 {
-  "name": "@curder/npm-vue-demo",
-  "description": "A demo for vue component.",
+  "name": "@curder/webpack-vue-component-demo",
+  "description": "A webpack config demo for vue component.",
   "author": "curder <q.curder@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "dist/npm-vue-demo.js",
+  "main": "dist/index.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"

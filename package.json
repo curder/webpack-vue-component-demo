@@ -1,0 +1,73 @@
+{
+  "name": "@curder/npm-vue-demo",
+  "description": "A demo for vue component.",
+  "author": "curder <q.curder@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/npm-vue-demo.js",
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "keywords": [
+    "npm",
+    "component",
+    "vuejs",
+    "vue",
+    "vue.js"
+  ],
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack-dev-server --hot --config=./examples/webpack.config.js",
+    "prod": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=./webpack.config.js",
+    "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "src",
+    "examples",
+    "dist/*.js"
+  ],
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-vue": "^5.0.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "purgecss-webpack-plugin": "^1.6.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

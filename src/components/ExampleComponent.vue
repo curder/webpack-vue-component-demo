@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Example Component</h2>
+    <h2 class="text-3xl bg-fixed">Example Component</h2>
   </div>
 </template>
 <script>

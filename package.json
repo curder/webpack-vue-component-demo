@@ -42,6 +42,7 @@
     "purgecss-webpack-plugin": "^1.6.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
+    "tailwindcss": "^1.1.2",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.1",
@@ -59,11 +60,6 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
     }
   },
   "browserslist": [

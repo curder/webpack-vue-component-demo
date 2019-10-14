@@ -1,4 +1,3 @@
-import './assets/sass/index.scss';
 import ExampleComponent from './components/ExampleComponent.vue'
 
 const Plugin = {
